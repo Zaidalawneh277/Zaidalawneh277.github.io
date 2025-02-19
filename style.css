@@ -1,23 +1,40 @@
-/* General styles */
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
     color: #333;
 }
 
-/* Container styling */
 .container {
-    max-width: 700px;
+    width: 80%;
+    max-width: 1200px;
     margin: auto;
-    background: white;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Navigation styles */
+h1, h2, h3 {
+    text-align: center;
+    color: #222;
+}
+
+.section {
+    padding: 60px 20px;
+    background: white;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -30,36 +47,52 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #007bff;
+    color: white;
     font-weight: bold;
 }
 
-/* Project section */
+/* Projects */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
 .project {
     background: #e3e3e3;
-    padding: 15px;
-    margin: 10px 0;
+    padding: 20px;
     border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .project a {
+    display: inline-block;
+    margin-top: 10px;
     text-decoration: none;
-    font-weight: bold;
     color: #007bff;
+    font-weight: bold;
 }
 
-/* Contact links */
-.links a {
-    display: block;
-    margin: 10px 0;
-    text-decoration: none;
-    color: blue;
-    font-weight: bold;
+/* Skills */
+.skills-list, .cert-list, .contact-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.skills-list li, .cert-list li, .contact-list li {
+    background: #f8f8f8;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 /* Footer */
 footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
     margin-top: 20px;
-    font-size: 12px;
-    color: gray;
 }
